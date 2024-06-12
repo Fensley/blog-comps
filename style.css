@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5f9fc;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.parent {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.two {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+}
+.top-ctn,
+.bottom {
+  display: flex;
+  gap: 10px;
+}
+/*  */
+.white {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.orange {
+  color: white;
+  background-color: #ff640d;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: #ff640d 0px 3px 8px;
+}
+.step-down {
+  margin-top: 10px;
+}
+p {
+  margin-bottom: 7px;
+}
+h3 {
+  margin-bottom: 30px;
+}
+h4 {
+  margin-bottom: 30px;
+}
+a {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  color: inherit;
+}
+img {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.play-ctn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+i {
+  font-size: 30px;
+  cursor: pointer;
+}
+i:active {
+  opacity: 0.5;
+  transition: 0.2s ease;
+}
+.fit {
+  height: fit-content;
+}
+.bar {
+  border-radius: 10px;
+  height: 10px;
+  width: 35%;
+  background-color: rgb(238, 238, 238);
+  position: relative;
+}
+.bar::before {
+  content: "";
+  background-color: #ff640d;
+  height: 10px;
+  width: 45%;
+  position: absolute;
+  border-radius: 10px;
+}
+.token {
+  margin-top: 20px;
+}
+.startbar {
+  border-radius: 10px;
+  height: 5px;
+  width: 8%;
+  background-color: black;
+  position: relative;
+  margin-top: 5px;
+}
+@media (max-width: 737px) {
+  body {
+    padding: 5px;
+  }
+  .two {
+    flex-direction: column;
+  }
+}
+@media (max-width: 487px) {
+  body {
+    height: fit-content;
+    padding: 10px 5px;
+  }
+  .parent {
+    display: block;
+  }
+}
