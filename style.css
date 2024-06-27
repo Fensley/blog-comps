@@ -16,6 +16,7 @@ body {
   display: flex;
   align-items: center;
   gap: 50px;
+  /* color: lightgray; */
 }
 .two {
   display: flex;
@@ -64,6 +65,11 @@ img {
   width: 50px;
   border-radius: 50%;
   object-fit: cover;
+  transition: 0.3s ease;
+}
+img:hover {
+  padding: 4px;
+  transition: 0.3s ease;
 }
 .play-ctn {
   display: flex;
